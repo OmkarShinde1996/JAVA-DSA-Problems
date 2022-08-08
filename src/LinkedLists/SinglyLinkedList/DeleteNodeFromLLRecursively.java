@@ -1,0 +1,49 @@
+package LinkedLists.SinglyLinkedList;
+
+import java.util.Scanner;
+
+public class DeleteNodeFromLLRecursively {
+    public static Nodes<Integer> takeInput1(){
+        Nodes<Integer> head=null, tail=null;
+        Scanner s = new Scanner(System.in);
+        int data = s.nextInt();
+
+        while(data != -1){
+            Nodes<Integer> newNode = new Nodes<>(data);
+            if(head==null){
+                head=newNode;
+                tail=newNode;
+            }else{
+                tail.next=newNode;
+                tail=tail.next;
+            }
+            data = s.nextInt();
+        }
+        return head;
+    }
+    public static void printList(Nodes<Integer> head){
+        while(head!=null){
+            System.out.print(head.data+" ");
+            head=head.next;
+        }
+    }
+    public static Nodes<Integer> deleteNodeRecursively(Nodes<Integer> head, int pos){
+        if(head==null){
+            return head;
+        }
+        if(pos==0){
+            head=head.next;
+            return head;
+        }
+        head.next = deleteNodeRecursively(head.next,pos-1);
+        return head;
+    }
+
+    public static void main(String[] args) {
+        Nodes<Integer> head = takeInput1();
+        Scanner s = new Scanner(System.in);
+        int pos = s.nextInt();
+        head = deleteNodeRecursively(head,pos);
+        printList(head);
+    }
+}

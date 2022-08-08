@@ -1,0 +1,137 @@
+*) Time complexity is the function that give us the relationship about how the time will grow as the input grows
+
+Why do we care?
+-----------------
+In Time complexity always look at bigger numbers, Always think that in case data will grow large in that case what
+will happen.
+
+Time Complexity wise below the best
+.....................................................
+O(1)<O(log n)<O(n)<O(nlog n)<O(4^n)
+.....................................................
+O(1) - takes less time
+O(log n) - takes little more time than O(1)
+O(n) - Takes more time than O(log n)
+O(4^n) - Exponential time complexity is very bad
+
+What do we consider when thinking about complexity
+-----------------------------------------------------
+1) Always think about wrost case complexity
+2) Always look at complexity for large infinity data
+3) Always ignore constants
+4) Always ignore less dominating terms
+example : O(3n^3+4n^2+5n+6)
+O(n^3+n^2+n) --> As per point 3
+O(n^3) --> As per point 4
+
+Big - oh notation
+---------------------
+*) The complexity will never exceed the upper bound limit
+O(n^3) - upper bound
+
+lim             f(n)/g(n) < infinity
+n->infinity
+
+Big - omega notation
+---------------------
+*) It is the opposite of Big-oh notation
+*) The complexity will never be less than the lower bound limit
+omega(n^3) - lower bound
+
+lim             f(n)/g(n) > 0
+n->infinity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+
+int mat[][]={{4,5,3,2,6},{7,5,3,8,9},{1,2,3}};
+================================================
+               0   1   2   3   4
+        0 -> | 4 | 5 | 3 | 2 | 6 |
+mat ->  1 -> | 7 | 5 | 3 | 8 | 9 |
+        2 -> | 1 | 2 | 3 |
+
+int mat[][] -> here mat variable stores the address of master array which consists of address to each 1D arrays
+so when you print "mat.length" it prints the length of rows in 2D array which in case of above example is 3
+and when you print "mat[0].length" it prints the length of columns in 0th row which in case of above example is 5
+
+
+
+
+
+
+

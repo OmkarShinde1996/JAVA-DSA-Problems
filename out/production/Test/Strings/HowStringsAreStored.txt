@@ -1,0 +1,34 @@
+
+
+when you type "String str="omkar";" below happens
+A new string gets created in String pool memory and variable 'str' stores the address of that string present in
+string pool in above case it is "omkar"
+
+when you type "String str1="omkar";" below happens
+Java searches for similar string in string pool memory if it is available then 'str1' holds the address of that
+string. In above case 'str' & 'str1' holds the same string address present in string pool memory.
+
+-------------------------------
+|   |-------------------|      |
+|   | str ----->"omkar" |      |
+|   | str1--------|     |      |
+|   |String pool memory |      |
+|   |-------------------|      |
+|  Heap Memory                 |
+-------------------------------
+
+-----------------------------------------------------------------------------------------------------------------
+When you type "String str2=new String("aniket");" below happens
+A new String gets created in heap memory and str2 points at that string
+
+When you type "String str3=new String("aniket");" below happens
+Another new String gets created in heap memory and str3 points at that string
+
+-------------------------------
+|   str2------>"aniket"        |
+|                              |
+|   str3------>"aniket"        |
+|                              |
+|                              |
+|  Heap Memory                 |
+-------------------------------
