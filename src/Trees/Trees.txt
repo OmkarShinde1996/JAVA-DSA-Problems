@@ -1,0 +1,10 @@
+in trees just like linked list we maintain a Node class which consist of data and an ArrayList of next node address
+
+here we are using ArrayList to store next node address because
+-------------------------------------------------------------------------------------------------------------------
+if we use Linked List we have to traverse each node to get expected node and
+if we use Array we need to have predefined size of the array, hence in case of trees as we don't know the size
+of the array can be and we also don't want to travel entire linked list to get expected node we are using
+ArrayList. In ArrayList we don't need to define a size as it is dynamic and also we will get expected node by
+providing it's index in ArrayList.
+-------------------------------------------------------------------------------------------------------------------
