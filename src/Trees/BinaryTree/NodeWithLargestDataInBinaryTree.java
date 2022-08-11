@@ -35,6 +35,7 @@ public class NodeWithLargestDataInBinaryTree {
         return root;
     }
 
+    //Time Complexity = O(n)
     public static int largestNodeData(BinaryTreeNode<Integer> root){
         if(root == null){
             return -1;

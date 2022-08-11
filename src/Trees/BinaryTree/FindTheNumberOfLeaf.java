@@ -35,7 +35,7 @@ public class FindTheNumberOfLeaf {
         }
         return root;
     }
-
+    //Time Complexity = O(n)
     public static int numberOfLeaf(BinaryTreeNode<Integer> root){
         if(root == null){
             return 0;

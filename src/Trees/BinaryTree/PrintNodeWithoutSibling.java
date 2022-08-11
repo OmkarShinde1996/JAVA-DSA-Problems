@@ -34,6 +34,7 @@ public class PrintNodeWithoutSibling {
         }
         return root;
     }
+    //Time Complexity = O(n)
     public static void printNodeWithoutSibling(BinaryTreeNode<Integer> root){
         if(root == null){
             return;

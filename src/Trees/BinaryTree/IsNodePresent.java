@@ -34,6 +34,7 @@ public class IsNodePresent {
         }
         return root;
     }
+    //Time Complexity = O(n)
     public static boolean isNodePresent(BinaryTreeNode<Integer> root, int x) {
         if(root == null){
             return false;

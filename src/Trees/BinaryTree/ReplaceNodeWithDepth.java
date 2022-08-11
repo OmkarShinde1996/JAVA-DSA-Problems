@@ -58,6 +58,7 @@ public class ReplaceNodeWithDepth {
         changeToDepthTree(root,0);
         return;
     }
+    //Time Complexity = O(n)
     public static void changeToDepthTree(BinaryTreeNode<Integer> root, int depth){
         if(root==null){
             return;

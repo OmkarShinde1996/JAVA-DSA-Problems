@@ -53,6 +53,7 @@ public class CountNumberOfNodesInBinaryTree {
         return root;
     }
 
+    //Time complexity = O(n)
     public static int countNodes(BinaryTreeNode<Integer> root){
         if(root == null){
             return 0;
