@@ -1,0 +1,5 @@
+generally there are 2 types of maps
+1) Tree Map
+2) Hash Map
+
+We use Tree map in case we wanted the elements in ascending order (InOrder)
