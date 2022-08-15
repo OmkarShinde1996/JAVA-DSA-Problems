@@ -9,4 +9,11 @@ Example :
            / \   /  \
           1   4 6    8
 
+In every Balanced BST operations like insertion, deletion and searching will have Time Complexity as O(log n)
 
+Balanced BST = (Left height - Right height) <= 1
+
+BST types
+1) AVL Trees
+2) Red Black Trees
+3) 2-4 Trees
