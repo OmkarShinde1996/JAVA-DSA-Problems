@@ -20,7 +20,7 @@ public class Map<K,V> {
         int hashCode = key.hashCode();//hashCode() method is already defined in Object class
         return hashCode % numBuckets;
     }
-
+    //Insertion
     public void insert(K key, V value){
         int bucketIndex = getBucketIndex(key);
         MapNode<K,V> head = bucket.get(bucketIndex);
@@ -35,5 +35,40 @@ public class Map<K,V> {
         MapNode<K,V> newNode = new MapNode<>(key,value);
         newNode.next = head;
         bucket.set(bucketIndex,newNode);
+    }
+    //getValue
+    public V getValue(K key){
+        int bucketIndex = getBucketIndex(key);
+        MapNode<K,V> head = bucket.get(bucketIndex);
+        while(head != null){
+            if(head.key.equals(key)){
+                return head.value;
+            }
+            head = head.next;
+        }
+        return null;
+    }
+    //Delete
+    public V removeKey(K key){
+        int bucketIndex = getBucketIndex(key);
+        MapNode<K,V> head = bucket.get(bucketIndex);
+        MapNode<K,V> previousNode = null;
+        while(head != null){
+            if(head.key.equals(key)){
+                if(previousNode == null){
+                    bucket.set(bucketIndex,head.next);
+                }else {
+                    previousNode.next = head.next;
+                }
+                return head.value;
+            }
+            previousNode = head;
+            head = head.next;
+        }
+        return null;
+    }
+    //size
+    public int size(){
+        return size;
     }
 }
