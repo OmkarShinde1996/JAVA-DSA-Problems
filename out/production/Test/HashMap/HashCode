@@ -1,0 +1,13 @@
+Basically we use HashCode to generate the key in HashMap using which we can go and store the value on that key
+position in array
+
+There are various methods to generate HashCode
+First we use Hash function to give us the integer hashed value of the string or any data type
+then we pass it to compression method to give us the key between array size.
+It is possible that 2 or more data may get same compressed key in that case we use collision handling
+
+Collision Handling
+1) Closed Hashing - In closed hashing 2 or more data can go on same key i.e. we can make particular array bucket
+as arrayList
+2)Open Addressing - In Open Addressing if the provided key by hash function is already full then we try to find
+another key by using various technics like linear probing, quadratic probing etc.
