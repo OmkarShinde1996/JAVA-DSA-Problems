@@ -1,0 +1,16 @@
+Heap mainly has 2 properties
+
+1) Complete Binary tree (CBT)
+
+Complete Binary tree means every level of nodes in binary tree has its full capacity on nodes except last node
+and insertion in binary tree should be done from left to right
+for example :
+                        1
+                       / \
+                      2   3
+                    /  \
+                   4    5
+you can say above tree is CBT as first 2 levels has nodes to it's full capacity and insertion on last level
+is happening from left to right
+
+
