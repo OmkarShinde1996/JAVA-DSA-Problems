@@ -34,4 +34,20 @@ node index in array
 
 2) Heap order property
 =================================================
+In Minimum Heap, Heap order property says that root priority should be minimum as compared to its children
+like below
+                        10
+                       / \
+                      40  25
+                    /  \
+                   50  45
 
+In Maximum Heap, Heap order property says that root priority should be maximum as compared to its children
+like below
+                        50
+                       / \
+                      40  25
+                    /  \
+                   30  25
+
+Once above 2 properties are satisfied then we can say that it is a heap data structure.
