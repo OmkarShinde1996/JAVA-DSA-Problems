@@ -51,3 +51,9 @@ like below
                    30  25
 
 Once above 2 properties are satisfied then we can say that it is a heap data structure.
+
+Heapify
+===================
+We do heapify and arrange the nodes according tho their order to maintain the heap properties.
+
+After doing heapify the insertion and deletion time complexity will be O(log n)
