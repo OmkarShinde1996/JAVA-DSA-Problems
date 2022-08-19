@@ -1,0 +1,59 @@
+Heap mainly has 2 properties
+
+1) Complete Binary tree (CBT)
+=================================================
+Complete Binary tree means every level of nodes in binary tree has its full capacity on nodes except last node
+and insertion in binary tree should be done from left to right
+for example :
+                        1
+                       / \
+                      2   3
+                    /  \
+                   4    5
+you can say above tree is CBT as first 2 levels has nodes to it's full capacity and insertion on last level
+is happening from left to right
+
+It is advisable that you store CBT in array so that insertion and deletion & searching will be of O(1)
+time complexity
+                        1
+                       / \
+                      2   3
+                    /  \
+                   4    5
+
+Array for above CBT is {1,2,3,4,5}
+formula for insertion
+left node insertion = 2*i+1 = 2*index of root node +1
+right node insertion = 2*i+2 = 2*index of root node +2
+
+using above formula to insert nodes will get inserted into tree in left to right fashion
+formula for getting root node for particular node is = (i-1) / 2 = (node index -1)/2 = this formula will give root
+node index in array
+
+
+
+2) Heap order property
+=================================================
+In Minimum Heap, Heap order property says that root priority should be minimum as compared to its children
+like below
+                        10
+                       / \
+                      40  25
+                    /  \
+                   50  45
+
+In Maximum Heap, Heap order property says that root priority should be maximum as compared to its children
+like below
+                        50
+                       / \
+                      40  25
+                    /  \
+                   30  25
+
+Once above 2 properties are satisfied then we can say that it is a heap data structure.
+
+Heapify
+===================
+We do heapify and arrange the nodes according tho their order to maintain the heap properties.
+
+After doing heapify the insertion and deletion time complexity will be O(log n)

@@ -2,10 +2,10 @@ package Heap;
 
 import java.util.ArrayList;
 //implementation of min heap
-public class PriorityQueue {
+public class Priority_Queue {
     private static ArrayList<Integer> heap;
 
-    public PriorityQueue() {
+    public Priority_Queue() {
         heap = new ArrayList<>();
     }
 
@@ -51,6 +51,7 @@ public class PriorityQueue {
         int temp = heap.get(0);
         heap.set(0, heap.get(heap.size() - 1));
         heap.remove(heap.size() - 1);
+        //Down-Heapify
         int parentindex = 0;
         int minIndex = parentindex;
         int leftChildIndex = 1;
