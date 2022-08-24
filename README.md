@@ -7,12 +7,16 @@ Below topics are covered till now
 1) OOPS concept
 2) Arrays
 3) 2D Arrays
-4) Linked List
-5) Queues
-6) Recursion
-7) Stack
-8) Strings
-9) Time and Space Complexity
-10) Generic Trees
-11) Binary Trees
-12) BST
+4) Sorting Algorithms
+5) Searching Algorithms
+6) Linked List
+7) Queues
+8) Recursion
+9) Stack
+10) Strings
+11) Time and Space Complexity
+12) Generic Trees
+13) Binary Trees
+14) BST
+15) Heap
+16) Heap sort
